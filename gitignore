@@ -1,0 +1,17 @@
+# Data (do NOT commit the raw HAM10000 dataset — it is large; download via Kaggle API)
+ham10000/
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+env/
+
+# Kaggle credentials — never commit
+kaggle.json
+
+# OS
+.DS_Store
+Thumbs.db
