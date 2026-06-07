@@ -104,57 +104,6 @@ A CUDA-capable GPU is strongly recommended for cGAN training.
 
 ---
 
-## Results
-
-### Model-A (Baseline)
-
-| Model | Accuracy | Precision | Recall | F1-score | Mean AUC |
-|-------|---------:|----------:|-------:|---------:|---------:|
-| SVM           | 0.6650 | 0.6501 | 0.6650 | 0.6565 | 0.8425 |
-| Decision Tree | 0.6261 | 0.6288 | 0.6261 | 0.6271 | 0.5934 |
-| Random Forest | 0.7179 | 0.6541 | 0.7179 | 0.6635 | 0.8673 |
-| Naive Bayes   | 0.4074 | 0.6957 | 0.4074 | 0.4848 | 0.6873 |
-
-*(Reference values from the Assignment 3 baseline. Final values will come from the notebook's
-regenerated Model-A so that A and B are perfectly consistent.)*
-
-### Model-B (GAN-Augmented)
-
-> **TODO:** paste from `results/model_B_results.csv` after running the notebook.
-
-| Model | Accuracy | Precision | Recall | F1-score | Mean AUC |
-|-------|---------:|----------:|-------:|---------:|---------:|
-| SVM           | — | — | — | — | — |
-| Decision Tree | — | — | — | — | — |
-| Random Forest | — | — | — | — | — |
-| Naive Bayes   | — | — | — | — | — |
-
-### Per-class F1 — Random Forest (the key finding)
-
-> **TODO:** paste from `results/per_class_f1_randomforest.csv`. The headline result is whether the
-> minority classes (`df`, `vasc`, `akiec`) and the medically critical `mel` improve after
-> augmentation.
-
-| Class | Model-A F1 | Model-B F1 | Δ |
-|-------|-----------:|-----------:|--:|
-| akiec | — | — | — |
-| bcc   | — | — | — |
-| bkl   | — | — | — |
-| df    | — | — | — |
-| mel   | — | — | — |
-| nv    | — | — | — |
-| vasc  | — | — | — |
-
----
-
-## Key Findings
-
-> **TODO:** complete after the run. Expected narrative: overall accuracy may change little (the
-> majority class `nv` dominates the test set), but minority-class recall/F1 — especially for the
-> medically important melanoma (`mel`) class — should improve, demonstrating the value of
-> generative augmentation for imbalanced medical datasets.
-
----
 
 ## Citation
 
